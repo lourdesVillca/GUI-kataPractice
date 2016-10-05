@@ -19,7 +19,10 @@ public final class DnaStrand {
      * @return the complemented dna.
      */
     public static String makeComplement(final String dna) {
-        final String result = dna.replaceAll("A", "t").replaceAll("C", "g").replaceAll("T", "a").replaceAll("G", "c");
-        return result.toUpperCase();
+        return dna.replaceAll("A", "t")
+                .replaceAll("C", "g")
+                .replaceAll("T", "a")
+                .replaceAll("G", "c")
+                .toUpperCase();
     }
 }
